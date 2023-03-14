@@ -23,7 +23,7 @@ pipeline {
             echo 'I am unstable :/'
         }
         failure {
-            bat 'docker-compose down'
+             'docker-compose down'
             echo 'I failed :('
         }
         changed {
